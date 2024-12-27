@@ -57,7 +57,7 @@
         ],
         "init-app": [
             "npm i && npm run build",
-            "@php artisan migrate"
+            "@php artisan migrate:fresh"
         ]
     },
     "extra": {

@@ -2,6 +2,9 @@
 
 namespace App\Providers;
 
+use App\Interfaces\CalculatorInterface;
+use App\Math\StructuredCalculator;
+use App\Math\SimpleCalculator;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -12,6 +15,8 @@ class AppServiceProvider extends ServiceProvider
     public function register(): void
     {
         //
+//        $this->app->bind(CalculatorInterface::class, SimpleCalculator::class);
+        $this->app->bind(CalculatorInterface::class, StructuredCalculator::class);
     }
 
     /**
