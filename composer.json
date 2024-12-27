@@ -57,6 +57,7 @@
         ],
         "init-app": [
             "npm i && npm run build",
+            "touch database/database.sqlite",
             "@php artisan migrate:fresh"
         ]
     },

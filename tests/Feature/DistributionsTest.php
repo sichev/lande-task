@@ -14,6 +14,8 @@ class DistributionsTest extends TestCase
 
     public function test_posting_and_viewing()
     {
+        $this->artisan('migrate:fresh');
+
         $this->assertDatabaseCount(DistributionModel::class, 0);
         $this->assertDatabaseCount(RoundingModel::class, 0);
         $this

@@ -8,7 +8,7 @@ So port 80 on the localhost should be free.
 In the terminal run this commands:
 
 ```shell
-git clone git://gihub.com/sichev/lande-task
+git clone git@github.com:sichev/lande-task.git
 cd lande-task
 ```
 
